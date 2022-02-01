@@ -1,0 +1,12 @@
+.title {
+  @include Orchidea-Pro;
+  font-size: 64px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.subtitle {
+  @include Orchidea-Pro;
+  font-size: 48px;
+  color: $main-color;
+}
