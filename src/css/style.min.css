@@ -1,2 +1,1 @@
-*{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}.container{max-width:1140px;margin:0 auto}.header{background:url("../img/photo2.jpg") center center/cover no-repeat;height:100vh}
-/*# sourceMappingURL=style.min.css.map */
+@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap);*{box-sizing:border-box;margin:0;padding:0}body{font-family:Manrope,sans-serif;font-weight:500}.container{max-width:1440px;padding:0 20px;margin:0 auto}.header{padding:35px 0 29px 0;background:linear-gradient(0deg,#464341 0,#010101 100%)}.header__wrapper{display:flex;justify-content:space-between;align-items:center}.header__logo img{max-width:100%}.header__phone{font-size:24px;color:#fff}
