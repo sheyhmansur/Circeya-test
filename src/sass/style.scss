@@ -21,7 +21,11 @@ ul {
   list-style-type: none;
 }
 
-/* ----------- Blocks ---------- */
+/* ----------- base ---------- */
+@import "base/mixins";
+@import "base/variables";
+
+/* ----------- blocks ---------- */
 @import "blocks/header";
 @import "blocks/promo";
 
