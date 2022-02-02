@@ -24,4 +24,15 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  //-------------Swiper----------
+  var swiper = new Swiper(".swiper", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });
