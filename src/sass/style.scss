@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Roboto&display=swap");
+/* ----------- base ---------- */
+@import "base/mixins";
+@import "base/variables";
 
 * {
   box-sizing: border-box;
@@ -9,6 +12,7 @@
 body {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
+  background-color: $second-color;
 }
 
 .container {
@@ -34,10 +38,6 @@ ul {
 a {
   text-decoration: none;
 }
-
-/* ----------- base ---------- */
-@import "base/mixins";
-@import "base/variables";
 
 /* ----------- blocks ---------- */
 @import "blocks/header";
