@@ -24,58 +24,66 @@
     </header>
 
     <main>
-        <section class="promo">
+        <section class="tabs">
             <div class="container">
-                <ul class="promo__tabs">
-                    <li class="promo__tab promo__tab-active" data-tab="#tab_1">Lorem</li>
-                    <li class="promo__tab" data-tab="#tab_2">Ipsum</li>
+                <ul class="tabs__nav">
+                    <li class="tabs__nav-btn active" data-tab="#tab_1">Lorem</li>
+                    <li class="tabs__nav-btn" data-tab="#tab_2">Ipsum</li>
                 </ul>
-                <h1 class="title promo__title">
-                    Lorem ipsum dolor <span>sit</span> amet
-                </h1>
             </div>
-
+        </section>
+        <section class="promo content content-active" id="tab_1">
             <div class="promo__wrapper">
-                <div class="promo__item promo__item-left">
-                    <div class="subtitle promo__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </div>
-                    <div class="promo__descr">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        <p>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit
-                            anim id est laborum/ Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                            aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                            Excepteur sint occaecat cupidatat.
-                        </p>
-                    </div>
+                <div class="container">
+                    <h1 class="title promo__title">
+                        Lorem ipsum dolor <span>sit</span> amet
+                    </h1>
                 </div>
-                <div class="promo__image promo__image-right">
-                    <img src="img/lorem/yulia.png" alt="фото">
-                </div>
-                <div class="promo__image promo__image-left">
-                    <img src="img/lorem/taisiya.png" alt="фото">
-                </div>
-                <div class="promo__item promo__item-right">
-                    <div class="subtitle promo__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                <div class="promo__block">
+                    <div class="promo__item promo__item-left">
+                        <div class="subtitle promo__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                        <div class="promo__descr">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <p>
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim id est laborum/ Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                                Excepteur sint occaecat cupidatat.
+                            </p>
+                        </div>
                     </div>
-                    <div class="promo__descr">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim
-                            id est laborum</p>
+                    <div class="promo__image promo__image-right">
+                        <img src="img/lorem/yulia.png" alt="фото">
+                    </div>
+                    <div class="promo__image promo__image-left">
+                        <img src="img/lorem/taisiya.png" alt="фото">
+                    </div>
+                    <div class="promo__item promo__item-right">
+                        <div class="subtitle promo__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                        <div class="promo__descr">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim
+                                id est laborum</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="slider">
+        <div class="slider content" id="tab_2">
             <div class="container">
                 <div class="title">
                     Lorem ipsum dolor <span>sit</span> amet
@@ -85,19 +93,25 @@
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slider__card">
-                            <img src="img/ipsum/photo-1.png" alt="фото">
-                        </div>
-                        <div class="swiper-slide slider__card">
-                            <img src="img/ipsum/photo-2.png" alt="фото">
-                        </div>
-                        <div class="swiper-slide slider__card">
                             <img src="img/ipsum/photo-3.png" alt="фото">
                         </div>
                         <div class="swiper-slide slider__card">
                             <img src="img/ipsum/photo-4.png" alt="фото">
+                            <div class="slider__card-text__4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </div>
                         </div>
                         <div class="swiper-slide slider__card">
                             <img src="img/ipsum/photo-5.png" alt="фото">
+                            <div class="slider__card-text__5">
+                                Lorem ipsum dolor sit amet
+                            </div>
+                        </div>
+                        <div class="swiper-slide slider__card">
+                            <img src="img/ipsum/photo-1.png" alt="фото">
+                        </div>
+                        <div class="swiper-slide slider__card">
+                            <img src="img/ipsum/photo-2.png" alt="фото">
                         </div>
                     </div>
                 </div>
