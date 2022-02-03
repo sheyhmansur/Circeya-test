@@ -1,10 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
   /* ----------- Переключение табов ---------- */
 
-  let tabsBtn = document.querySelectorAll(".course_tab");
-  let tabsItems = document.querySelectorAll(".course_inner");
+  let tabsBtn = document.querySelectorAll(".tabs__nav-btn");
+  let tabsItems = document.querySelectorAll(".content");
 
-  tabsBtn.forEach(function (item) {
+  tabsBtn.forEach(onTabClick);
+
+  function onTabClick(item) {
     item.addEventListener("click", function () {
       let currentBtn = item;
       let tabId = currentBtn.getAttribute("data-tab");
@@ -16,14 +18,14 @@ window.addEventListener("DOMContentLoaded", () => {
         });
 
         tabsItems.forEach(function (item) {
-          item.classList.remove("active");
+          item.classList.remove("content-active");
         });
 
         currentBtn.classList.add("active");
-        currentTab.classList.add("active");
+        currentTab.classList.add("content-active");
       }
     });
-  });
+  }
 
   /* ----------- Слайдер ---------- */
 
