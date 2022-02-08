@@ -48,3 +48,63 @@
 .content-active {
   display: block;
 }
+
+/* ----------- media запросы ---------- */
+
+@media (max-width: 1661px) {
+  .promo {
+    &__block {
+      justify-content: space-between;
+    }
+    &__item-left {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1459px) {
+  .promo {
+    &__block {
+      justify-content: center;
+    }
+    &__image-right {
+      margin-top: 50px;
+    }
+    &__image-left {
+      margin-top: 50px;
+      margin-right: 0;
+    }
+    &__item-right {
+      margin-right: 0;
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .promo {
+    padding-top: 17px;
+    padding-bottom: 80px;
+    .title {
+      font-size: 36px;
+      margin-bottom: 35px;
+    }
+    &__item-left {
+      padding: 0 20px;
+    }
+    &__image-left {
+      order: 1;
+    }
+    .subtitle {
+      font-size: 24px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+    &__item-right {
+      margin-top: 60px;
+      padding: 0 20px;
+      margin-left: 0;
+    }
+  }
+}

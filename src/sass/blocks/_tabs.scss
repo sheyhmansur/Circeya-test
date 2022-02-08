@@ -1,5 +1,15 @@
 .tabs {
   padding: 90px 0 40px 0;
+  .link {
+    font-size: 36px;
+    cursor: pointer;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-weight: 700;
+    a {
+      color: inherit;
+    }
+  }
   &__nav {
     display: flex;
   }
@@ -26,6 +36,29 @@
       left: 0;
       background-color: $main-color;
       transition: 0.8s;
+    }
+  }
+}
+
+/* ----------- media запросы ---------- */
+
+@media (max-width: 500px) {
+  .tabs {
+    .link {
+      font-size: 18px;
+    }
+    padding-top: 40px;
+    &__nav-btn {
+      font-size: 18px;
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+    &__nav-btn.active {
+      &::after {
+        content: "";
+        height: 3px;
+      }
     }
   }
 }

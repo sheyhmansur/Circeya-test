@@ -1,25 +1,29 @@
 .slider {
   padding: 70px 0 210px 0;
+
   .title {
     text-align: center;
   }
   .swiper {
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin: 70px auto 0 auto;
   }
 
-  .swiper-wrapper {
-    margin-top: 30px;
-  }
   .swiper-slide {
-    position: relative;
+    width: auto;
     height: 550px;
     cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
   }
+
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
   }
+
   .slider__card-text__4 {
     position: absolute;
     bottom: 0;
@@ -57,12 +61,11 @@
     height: 32px;
     background-position: center;
     background-repeat: no-repeat;
-    // background-size: 20px 20px;
   }
 
   .swiper-button-prev,
   .swiper-button-next {
-    top: 115%;
+    top: 117%;
   }
 
   .swiper-button-prev {
@@ -70,23 +73,6 @@
   }
   .swiper-button-next {
     right: 44%;
-  }
-
-  .swiper-slide {
-    // position: relative;
-    // &:before {
-    //   position: absolute;
-    //   content: "";
-    //   width: 100%;
-    //   height: 100%;
-    //   top: 0;
-    //   right: 0;
-    //   z-index: 0;
-    //   background-image: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0.05) 100%);
-    //   transform: matrix(-1, 0, 0, 1, 0, 0);
-    // }
-    opacity: 0.5;
-    transition: 0.5s;
   }
 
   .swiper-slide-active,
@@ -104,5 +90,141 @@
   }
   .swiper-button-next {
     background-image: url("../icons/arrow_right.svg");
+  }
+}
+
+/*----------------- Полноэкранный режим слайдера -------------------*/
+
+.big-img {
+  display: none;
+}
+.big-img.show {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  // overflow: none;
+  overflow: hidden;
+  display: block;
+}
+
+.big-img__content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  position: relative;
+  background: rgb(0, 0, 0);
+}
+.big-img__content img {
+  width: 100%;
+  height: 789px;
+  object-fit: cover;
+}
+.big-img__text {
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 25px;
+  padding: 0 20px;
+  color: $second-color;
+  p {
+    margin-top: 10px;
+  }
+}
+.close {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 2%;
+  right: 1%;
+  z-index: 1001;
+  cursor: pointer;
+  background-image: url("../icons/close.svg");
+  background-repeat: no-repeat;
+}
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 70px;
+  z-index: 1002;
+  bottom: 14%;
+  cursor: pointer;
+  background-color: $main-color;
+  svg {
+    pointer-events: none;
+  }
+}
+.arrow-left {
+  right: 19%;
+}
+.arrow-right {
+  right: 16%;
+}
+
+/* ----------- media запросы ---------- */
+
+@media (max-width: 700px) {
+  .slider {
+    padding: 7px 0 80px 0;
+    .slider__card-text__4 {
+      font-size: 15px;
+      padding: 25px 25px;
+    }
+    .slider__card-text__5 {
+      font-size: 21px;
+      padding-right: 10px;
+    }
+    .title {
+      font-size: 36px;
+      text-align: inherit;
+    }
+  }
+  .swiper .swiper-slide {
+    width: 260px;
+    height: 400px;
+  }
+  .swiper .swiper-slide {
+    opacity: 1;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .big-img__content {
+    padding-top: 150px;
+  }
+
+  .big-img__content img {
+    width: 100%;
+    height: 100%;
+  }
+  .close {
+    right: 3%;
+  }
+  .arrow-left,
+  .arrow-right {
+    width: 30px;
+    height: 30px;
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .arrow-left,
+  .arrow-right {
+    bottom: 17.5%;
+  }
+  .arrow-left {
+    right: 14%;
+  }
+  .arrow-right {
+    right: 6%;
   }
 }
