@@ -20,6 +20,6 @@
 
 ## Результат должен корректно работать во всех современных браузерах. Также нужно учесть корректную работу на мобильных устройствах iOS/Android (Safari/Chrome)
 
-[<h3> Посмотреть </h3>](https://sheyhmansur.github.io/circeya-test2/)
+[<h2> Посмотреть </h2>](https://sheyhmansur.github.io/circeya-test2/)
 
 
