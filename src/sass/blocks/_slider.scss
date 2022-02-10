@@ -99,19 +99,18 @@
   display: none;
 }
 .big-img.show {
-  position: absolute;
-  height: 100vh;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  // overflow: none;
+  z-index: 1000000;
   overflow: hidden;
   display: block;
 }
 
 .big-img__content {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +119,7 @@
   background: rgb(0, 0, 0);
 }
 .big-img__content img {
-  width: 100%;
+  width: 1300px;
   height: 789px;
   object-fit: cover;
 }
@@ -144,6 +143,7 @@
   cursor: pointer;
   background-image: url("../icons/close.svg");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .arrow-left,
 .arrow-right {
@@ -198,12 +198,15 @@
     display: none;
   }
   .big-img__content {
-    padding-top: 150px;
+    padding-top: 60px;
   }
-
   .big-img__content img {
     width: 100%;
-    height: 100%;
+    height: 550px;
+  }
+  .big-img__text {
+    font-size: 14px;
+    padding-bottom: 65px;
   }
   .close {
     right: 3%;
